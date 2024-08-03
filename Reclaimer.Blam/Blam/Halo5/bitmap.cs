@@ -54,7 +54,6 @@ namespace Reclaimer.Blam.Halo5
                 data = reader.ReadBytes((int)resource.TotalUncompressedSize);
             }
 
-
             //todo: cubemap check
             var format = TextureUtils.DXNSwap(submap.BitmapFormat, true);
             var props = new BitmapProperties(submap.Width, submap.Height, format, "Texture2D");
